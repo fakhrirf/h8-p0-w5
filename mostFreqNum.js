@@ -17,6 +17,22 @@ function sorting(arrNumber) {
 
 function getTotal(arrNumber) {
   // code di sini
+  var angkaTerbesar = arrNumber[0];
+  var muncul = 1;
+  
+  for (let i = 1; i < arrNumber.length; i++) {
+    if (arrNumber[0] === arrNumber[i]) {
+      muncul++;
+    }
+  }
+  
+  var hasil = 'angka paling besar adalah ' + angkaTerbesar + ' dan jumlah kemunculan sebanyak ' + muncul + ' kali';
+  
+  if (arrNumber.length === 0) {
+    return '';
+  } else {
+    return hasil;
+  }
 }
 
 function mostFrequentLargestNumbers(arrNumber) {
